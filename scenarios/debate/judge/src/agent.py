@@ -179,7 +179,7 @@ Return a JSON response matching the provided schema.
 """
 
         response = self.client.models.generate_content(
-            model="gemini-2.5-flash-lite",
+            model="gemini-3.5-flash-lite",
             config=genai.types.GenerateContentConfig(
                 system_instruction=system_prompt,
                 response_mime_type="application/json",

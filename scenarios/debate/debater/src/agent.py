@@ -26,7 +26,7 @@ class Agent:
         await updater.update_status(TaskState.working, new_agent_text_message("Thinking..."))
 
         response = self.client.models.generate_content(
-            model="gemini-2.5-flash-lite",
+            model="gemini-3.5-flash-lite",
             config=genai.types.GenerateContentConfig(system_instruction=SYSTEM_PROMPT),
             contents=prompt,
         )
